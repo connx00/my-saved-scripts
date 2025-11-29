@@ -1,0 +1,291 @@
+--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+local vu1 = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local v2 = vu1
+local v3 = {
+    Name = "Combat Initation (v2.2.0) cracked by annoyingcrack",
+    Icon = 0,
+    LoadingTitle = "Rayfield Interface Suite",
+    LoadingSubtitle = "by Sirius",
+    Theme = "DarkBlue",
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+    ConfigurationSaving = {
+        Enabled = false,
+        FolderName = nil,
+        FileName = "Extreme Hub crack"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "nil",
+        RememberJoins = false
+    },
+    KeySystem = false,
+    KeySettings = {
+        Title = "Join My discord for Key",
+        Subtitle = "Key System",
+        Note = "nil",
+        FileName = "Key",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {
+            "thatthatthatISisISkeyskeyskeyslol911"
+        }
+    }
+}
+local v4 = vu1.CreateWindow(v2, v3)
+local function vu13(p5, p6)
+    local v7 = game.Players.LocalPlayer
+    local v8 = v7.Backpack:FindFirstChild(p5) or v7.Character:FindFirstChild(p5)
+    if v8 then
+        local v9, v10, v11 = pairs(p6)
+        while true do
+            local v12
+            v11, v12 = v9(v10, v11)
+            if v11 == nil then
+                break
+            end
+            v8:SetAttribute(v11, v12)
+        end
+        print(p5 .. " attributes have been set.")
+    else
+        print(p5 .. " not found in the Backpack or equipped.")
+    end
+end
+local v14 = v4:CreateTab("Fun Stuffz", 0)
+v14:CreateSection("Sword")
+v14:CreateParagraph({
+    Title = "Sword",
+    Content = "Parry go BRRR"
+})
+v14:CreateButton({
+    Name = "Modded Sword",
+    Callback = function(_)
+        vu13("Sword", {
+            LungeRate = 0,
+            Swingrate = 0,
+            OffhandSwingRate = 0
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Firebrand",
+    Callback = function()
+        vu13("Firebrand", {
+            LungeRate = 0,
+            Swingrate = 0,
+            OffhandSwingRate = 0,
+            Windup = 0
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Katana",
+    Callback = function()
+        vu13("Katana", {
+            LungeRate = 0,
+            Swingrate = 0,
+            OffhandSwingRate = 0
+        })
+    end
+})
+v14:CreateSection("Slingshot")
+v14:CreateParagraph({
+    Title = "Slingshot",
+    Content = "Spammy!"
+})
+v14:CreateButton({
+    Name = "Modded Slingshot",
+    Callback = function()
+        vu13("Slingshot", {
+            Capacity = 10000,
+            ChargeRate = 0,
+            Firerate = 0,
+            Spread = 0,
+            ProjectileSpeed = 2250
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Flamethrower",
+    Callback = function()
+        vu13("Flamethrower", {
+            Cooldown = 0
+        })
+    end
+})
+v14:CreateSection("Paintball Gun")
+v14:CreateParagraph({
+    Title = "Paintball Gun",
+    Content = "KILL HIM ALL"
+})
+v14:CreateButton({
+    Name = "Modded Paintball Gun",
+    Callback = function()
+        vu13("Paintball Gun", {
+            Firerate = 0,
+            ProjectileSpeed = 2250
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded BB Gun",
+    Callback = function()
+        vu13("BB Gun", {
+            Firerate = 0,
+            MinShots = 2,
+            MaxShots = math.huge
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Freeze Ray (Always Charged)",
+    Callback = function()
+        vu13("Freeze Ray", {
+            Firerate = 0,
+            ProjectileSpeed = 2250,
+            ChargeTime = 0
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Freeze Ray (Hold to Charge)",
+    Callback = function()
+        vu13("Freeze Ray", {
+            Firerate = 0,
+            ProjectileSpeed = 2250
+        })
+    end
+})
+v14:CreateSection("Superball")
+v14:CreateParagraph({
+    Title = "Superball",
+    Content = "Bounce."
+})
+v14:CreateButton({
+    Name = "Modded Ninja Stars",
+    Callback = function(_)
+        vu13("Ninja Stars", {
+            ThrowRate = 0,
+            Capacity = 10000000,
+            ChargeRate = 0
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Bazooka",
+    Default = false,
+    Flag = "Bazooka",
+    Callback = function()
+        vu13("Bazooka", {
+            ReloadTick = 0,
+            Capacity = 100,
+            PassiveReloadTick = 0
+        })
+    end
+})
+v14:CreateSection("Timebomb")
+v14:CreateParagraph({
+    Title = "Timebomb",
+    Content = "Chat is this real?"
+})
+v14:CreateButton({
+    Name = "Modded Subspace Tripmine",
+    Default = false,
+    Flag = "Subspace_Tripmine",
+    Callback = function()
+        vu13("Subspace Tripmine", {
+            Cooldown = 0
+        })
+    end
+})
+v14:CreateButton({
+    Name = "Modded Explosive Pinata",
+    Callback = function(_)
+        vu13("Explosive Pinata", {
+            Cooldown = 0
+        })
+    end
+})
+v14:CreateSection("Trowel")
+v14:CreateParagraph({
+    Title = "Trowel",
+    Content = "Hey look guys! I\'m a Builder Man!"
+})
+v14:CreateToggle({
+    Name = "Frozen Wrench",
+    Flag = "Wrench",
+    Callback = function(p15)
+        local v16 = game.Players.LocalPlayer.Backpack:FindFirstChild("Wrench") or game.Players.LocalPlayer.Character:FindFirstChild("Wrench")
+        if v16 then
+            v16:SetAttribute("TimeScale", p15 and 0 or 1)
+        else
+            print("Wrench not found in the Backpack or equipped.")
+        end
+    end
+})
+local v17 = v4:CreateTab("Hats", 0)
+v17:CreateButton({
+    Name = "Electric Punk (Lighting Chance)",
+    Callback = function()
+        local v18 = game.Players.LocalPlayer.Backpack.Parent:FindFirstChild("AccessoryEffects")
+        if v18 then
+            v18:SetAttribute("Lightning_Chance", 100)
+        else
+            print("AccessoryEffects not found.")
+        end
+    end
+})
+v17:CreateInput({
+    Name = "Melee Range (5 = +500%)",
+    CurrentValue = "5",
+    RemoveTextAfterFocusLost = false,
+    PlaceholderText = "",
+    Flag = "meleerangevalue",
+    Callback = function(p19)
+        vu1.Flags.meleerangevalue = {
+            Value = p19
+        }
+    end
+})
+v17:CreateInput({
+    Name = "Pogo Range (5 = +500%)",
+    Default = "5",
+    RemoveTextAfterFocusLost = false,
+    PlaceholderText = "",
+    Flag = "pogorangevalue",
+    Callback = function(p20)
+        vu1.Flags.pogorangevalue = {
+            Value = p20
+        }
+    end
+})
+v17:CreateButton({
+    Name = "Bandit/Stage Prop (Melee Range & Pogo Range)",
+    Callback = function()
+        local v21 = game.Players.LocalPlayer.Backpack.Parent:FindFirstChild("AccessoryEffects")
+        if v21 then
+            v21:SetAttribute("Melee_Range", vu1.Flags.meleerangevalue.Value)
+            v21:SetAttribute("Pogo_Range", vu1.Flags.pogorangevalue.Value)
+        else
+            print("AccessoryEffects not found.")
+        end
+    end
+})
+v4:CreateTab("Character"):CreateButton({
+    Name = "Infinite Dashes",
+    Callback = function()
+        local v22 = game.Players.LocalPlayer.Character
+        if v22 then
+            v22:SetAttribute("DashRegenTime", 0.05)
+            v22:SetAttribute("DashRegenFury", 0.05)
+        else
+            print("Character not found.")
+        end
+    end
+})
+v4:CreateTab("Information", 0):CreateParagraph({
+    Title = "v2.2.0",
+    Content = "Updated for"
+})
